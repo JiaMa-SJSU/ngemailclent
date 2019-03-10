@@ -19,6 +19,7 @@ export class EmailsComponent implements OnInit {
   }
   onSelectEmail(email:Email) {
     this.selectedEmail = email
+   
   }
 
 }

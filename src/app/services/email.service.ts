@@ -13,4 +13,7 @@ export class EmailService {
   getEmails():Observable<Email[]>{
     return this.http.get<Email[]>(this.emailsUrl);
   }
+  getEmail(id:string):Observable<Email>{
+    return this.http.get<Email>(this.emailsUrl+"/"+id);
+  }
 }

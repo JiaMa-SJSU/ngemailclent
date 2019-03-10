@@ -1,18 +1,14 @@
-<form>
-<p>
-    <mat-form-field appearance="outline">
-        <input matInput>
-    </mat-form-field>
+<form class="email-form">
+<p>To:
+    <input class= "input" id = "to" type="email">
 </p>
-<p>
-    <mat-form-field appearance="outline">
-        <input matInput>
-    </mat-form-field>
+<p>Subject:
+    <input class= "input" id = "subject" type="text">
 </p>
   <p>
-      <mat-form-field appearance="outline">
-          <textarea matInput placeholder="Textarea" placeholder="Input message here"></textarea>
-        </mat-form-field>
+  
+    <textarea class = "textarea" matInput placeholder="Textarea" placeholder="Type your message here"></textarea>
+
   </p>
-  <button type="submit" md-raised-button>Send</button>
+  <button class="button" type="submit" md-raised-button>Send</button>
   </form>

@@ -10,7 +10,7 @@ import { EmailDetailComponent } from './components/email-detail/email-detail.com
 const routes: Routes = [
   { path: '',redirectTo: '/LIST', pathMatch: 'full'},
   { path: 'LIST', component:  EmailsComponent},
-  { path: 'details:id', component:  EmailDetailComponent},
+  { path: 'details/:id', component:  EmailDetailComponent},
   { path: 'CREATE', component:  AddEmailComponent},
 ];
 export const appRouting = RouterModule.forRoot(routes);

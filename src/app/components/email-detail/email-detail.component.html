@@ -1,6 +1,5 @@
 <div *ngIf = "email">
-    <h2>Email Details</h2>
-     <p>{{ email.to }}</p>
-     <p>{{ email.subject }}</p>
-     <p> {{ email.text }}</p>
+     <p>To: {{ email.to }}</p>
+     <p>Subject: {{ email.subject }}</p><br />
+     {{ email.text }}
 </div> 

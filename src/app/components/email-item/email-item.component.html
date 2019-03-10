@@ -1,15 +1,19 @@
 <div [ngClass]="setClasses()"> 
+
 <table>
   <tr> 
     <td>
     <input type="checkbox" />
     </td> 
+    <a [routerLink]="['/details', email.id]" class="router-link"> 
     <td width="20%">
      {{ email.to }} 
     </td>
     <td width="80%">
      {{ email.subject }}
     </td>
+  </a>
   </tr>   
 </table>
+
 </div>
