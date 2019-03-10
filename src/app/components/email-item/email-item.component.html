@@ -1,6 +1,15 @@
 <div [ngClass]="setClasses()"> 
-<p>
-  <input type="checkbox" />
-  {{ email.to }}   {{ email.subject }}
-</p>
+<table>
+  <tr> 
+    <td>
+    <input type="checkbox" />
+    </td> 
+    <td width="20%">
+     {{ email.to }} 
+    </td>
+    <td width="80%">
+     {{ email.subject }}
+    </td>
+  </tr>   
+</table>
 </div>

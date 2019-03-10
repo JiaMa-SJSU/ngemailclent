@@ -12,4 +12,10 @@ export class AddEmailComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit(){
+    const email = {
+      
+    }
+  }
+
 }

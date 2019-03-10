@@ -1,2 +1,8 @@
-<app-email-item *ngFor ="let email of emails" [email]="email">
+
+<app-email-item class = "emails" *ngFor ="let email of emails" 
+[email]="email" 
+[class.selected]="email === selectedEmail"
+(click)="onSelectEmail(email)">
+
 </app-email-item>
+<app-email-detail [email]="selectedEmail"></app-email-detail>

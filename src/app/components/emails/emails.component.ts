@@ -8,6 +8,7 @@ import { EmailService } from '../../services/email.service'
 })
 export class EmailsComponent implements OnInit {
   emails: Email[];
+  selectedEmail: Email;
 
   constructor(private emailService:EmailService) { }
 
@@ -15,6 +16,9 @@ export class EmailsComponent implements OnInit {
     this.emailService.getEmails().subscribe(emails => {
        this.emails = emails;
     });
+  }
+  onSelectEmail(email:Email) {
+    this.selectedEmail = email
   }
 
 }
