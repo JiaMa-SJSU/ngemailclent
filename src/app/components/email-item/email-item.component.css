@@ -1,0 +1,11 @@
+.email {
+  background-color: #FFFFFF;
+  padding:8px;
+  border-bottom:1px solid black;
+  font-weight:bold; 
+}
+
+.is-read {
+    font-weight:normal; 
+    background-color: #EEEEEE;
+}
